@@ -31,13 +31,15 @@ services:
     ports:
       - "3000:3000"  
     entrypoint: dockerize -wait tcp://mysql:3306 -timeout 20s docker-entrypoint.sh
-    command: node index.js
+    command: npm run start
     tty: true
     depends_on:
       - mysql
     networks:
       - nodenet
-     
+    volumes:
+      - ./index.js:/app/index.js
+
 networks:
   nodenet:
     driver: bridge
