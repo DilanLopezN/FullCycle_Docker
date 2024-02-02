@@ -6,3 +6,6 @@ pós isso servir uma página mostrando o que foi inserido no banco atráves de p
 execultar: docker compose up -d 
 acessar localhost:8080 no navegador
 
+docker-go
+Desafio de otimização de imagem multistagebuilding, onde teria que subir um hello word no docker hub com uma imagem com menos de 2mb
+comando: docker pull dilanlopez/fullcycle:latest
