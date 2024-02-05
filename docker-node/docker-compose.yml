@@ -38,7 +38,7 @@ services:
     networks:
       - nodenet
     volumes:
-      - ./index.js:/app/index.js
+      - .:/app
 
 networks:
   nodenet:
